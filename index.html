@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB SITE MUSIC</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <video autoplay loop muted>
+      <source src="VIDEOMUSIC.mp4" type="video/mp4" />
+      Tu navegador no soporta la etiqueta de video.
+    </video>
+    <main class="content">
+      <nav>
+        <img src="logo.png" alt="logotipo" />
+        <ul>
+          <li><a href="#CASA">CASA</a></li>
+          <li><a href="#ACERCA DE">ACERCA DE</a></li>
+          <li><a href="#ESPECIFICACIÓN">ESPECIFICACIÓN</a></li>
+          <li><a href="#PRODUCTOS">PRODUCTOS</a></li>
+          <li><a href="#CONTACTO">CONTACTO</a></li>
+        </ul>
+      </nav>
+      <section>
+        <h1>
+          EL AMOR <br />
+          EN <br />
+          CADA NOTA
+        </h1>
+        <div>
+          <p>Clic To Play</p>
+          <img src="play.png" alt="icons" id="icons" />
+        </div>
+      </section>
+    </main>
+
+    <audio id="myAudio" controls>
+      <source src="Walker.mp3" type="audio/mp3" />
+    </audio>
+
+    <script>
+      var myAudio = document.getElementById("myAudio");
+      var icons = document.getElementById("icons");
+
+      icons.onclick = function () {
+        if (myAudio.paused) {
+          myAudio.play();
+          icons.src = "pause.png";
+        } else {
+          myAudio.pause();
+          icons.src = "play.png";
+        }
+      };
+    </script>
+  </body>
+</html>
