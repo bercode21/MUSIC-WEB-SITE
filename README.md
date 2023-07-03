@@ -11,11 +11,11 @@ To install **BERCODER**, follow these steps:
 Linux and macOS:
 
 ```bash
-sudo git clone 
+sudo git clone  https://github.com/bercode21/MUSIC-WEB-SITE
 ``` 
 
 Windows:
 
 ```bash
-git clone 
+git clone https://github.com/bercode21/MUSIC-WEB-SITE
 ```
